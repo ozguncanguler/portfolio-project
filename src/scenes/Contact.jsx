@@ -1,11 +1,13 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 import { motion } from "framer-motion";
 
 const Contact = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const { t } = useTranslation("translation");
 
   const {
     register,
@@ -27,9 +29,11 @@ const Contact = () => {
       className="flex flex-col justify-center items-start h-full mt-10 py-10"
     >
       <div className="flex flex-row">
-        <p className="text-8xl font-neonderthaw text-neon-blue">Contacts</p>
+        <p className="text-8xl font-neonderthaw text-neon-blue">
+          {t("contact.contacts")}
+        </p>
       </div>
-      <div className="flex flex-col md:flex-row w-full">
+      <div className="flex flex-col md:flex-row w-full my-12">
         <form
           target="_blank"
           onSubmit={onSubmit}
@@ -39,7 +43,7 @@ const Contact = () => {
           <input
             className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
             type="text"
-            placeholder="NAME"
+            placeholder={t("contact.name")}
             {...register("name", {
               required: true,
               maxLength: 100,
@@ -55,7 +59,7 @@ const Contact = () => {
           <input
             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
             type="text"
-            placeholder="EMAIL"
+            placeholder={t("contact.email")}
             {...register("email", {
               required: true,
               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -71,7 +75,7 @@ const Contact = () => {
           <textarea
             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
             name="message"
-            placeholder="MESSAGE"
+            placeholder={t("contact.message")}
             rows="4"
             cols="50"
             {...register("message", {
@@ -91,7 +95,7 @@ const Contact = () => {
             className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
             type="submit"
           >
-            SEND ME A MESSAGE
+            {t("contact.sendMessage")}
           </button>
         </form>
       </div>

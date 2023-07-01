@@ -1,0 +1,37 @@
+{
+    "home": {},
+    "about": {
+        "about": "Hakkında",
+        "title": "Kısa Öykü",
+        "paragraph1": "Ben Özgün. ARGE Uzman Mühendisi, Frontend Geliştirici ve UI/UX Tasarımcısı olarak çalışmaktayım. 1995 İstanbulda doğdum ve halen İstanbulda yaşıyorum. Yıldız Teknik Üniversitesi Kontrol ve Otomasyon Mühendisliği bölümünden mezunum ve 2019 yılından beri Arçelik bünyesinde çalışıyorum.",
+        "paragraph2": "Arçelikteki stajım süresince, TV'leri PC üzerinden kontrol edebileceğim bir web arayüzü tasarladım. Daha sonra mühendisliğe terfi ettim ve inhouse-outsource TV'lerin yazılım hatalarının giderilmesi üzerine çalıştım. İki Android TV projesinin geliştirilme ve üretilme sürecinde partner firmalarımız olan Google ve MTK ile çalışma fırsatım oldu. Uzmanlık dönemimde Akıllı Tahta ve Hotel TV projeleri üzerine çalıştım. Şu anda web-tabanlı otel yönetim sistemi ve Android TV'ler için Hotel TV uygulaması geliştirmek üzerine çalışmaktayım.",
+        "paragraph3": "Çizim yapmak ve müzik yapmak hobilerimin arasındadır. Karakalem ve mürekkep gerçekçi portreler yapmaya yeteneğim var. Ek olarak tüm gitar türlerini ve klavye çalmayı biliyorum.",
+        "paragraph4": "Kariyerim boyunca görsel tasarıma olan ilgim arttı ve bu yeteneğimi empati yeteneğimle birleştirerek frontend geliştiriciliği alanında uzmanlaşmayı hedefliyorum. İnsanların yaşamlarını kolaylaştırmak ve iyileştirmek benim temel önceliklerimdir. Gelecekte kariyerime Avrupada devam etmeyi hedefliyorum. Üniversite yıllarında Erasmus+ öğrenci değişim programı ile beş ay Avrupada kalma fırsatım oldu. Ve bu deneyimin ruhumu ve yaratıcılığımı beslediğine inanıyorum."
+    },
+    "skills": {
+        "skills": "Yetenekler",
+        "title": "Yeteneklerimin Açıklaması",
+        "paragraph": "Lisede karakalem çizimlere ilgi duymaya başladım ve üniversite eğitimim boyunca fonksiyonel ve nesneye dayalı programlama ve mikrodenetleyici programlama dersleri aldım. Profesyonel kariyerimde web uygulamalarına ve gömülü Linux projelerine odaklandım ve bu alanlardaki becerilerimi geliştirdim. C, C++, JS, TS, React-JS, HTML, CSS, Bootstrap, SASS, Tailwind ve MUI gibi teknolojileri öğrendim."
+    },
+    "projects": {
+        "projects" : "Projeler",
+        "header1": "DAHİL OLDUĞUM",
+        "header2": "BÜTÜN",
+        "header3": "PROJELER"
+    },
+    "contact": {
+        "contacts": "İletişim",
+        "name": "İSİM",
+        "email": "EMAIL",
+        "message": "MESAJ",
+        "sendMessage": "BANA MESAJ GÖNDER"
+    },
+    "footer": {},
+    "navbar": {
+        "home": "Ana Sayfa",
+        "about": "Hakkında",
+        "skills": "Yetenekler",
+        "projects": "Projeler",
+        "contact": "İletişim"
+    }
+}

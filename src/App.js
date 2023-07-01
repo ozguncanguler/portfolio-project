@@ -8,6 +8,7 @@ import Contact from "./scenes/Contact";
 import { useState, useEffect, useRef } from "react";
 import LineGradient from "./components/LineGradient";
 import useMediaQuery from "./hooks/useMediaQuery";
+import "./i18n";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");

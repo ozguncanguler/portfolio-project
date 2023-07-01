@@ -1,0 +1,37 @@
+{
+    "home": {},
+    "about": {
+        "about": "About",
+        "title": "Short Story",
+        "paragraph1": "I'm Özgün. I work as a Frontend Developer, UI/UX Designer, and R&D Specialist. I was born in Istanbul in 1995, and currently live in Istanbul. I graduated from YTU with a degree in Control and Automation Engineering, and I have been working at Arçelik company since 2019.",
+        "paragraph2": "During my internship at Arçelik, I designed a web interface that allows controlling TVs from a PC. Later I was promoted to engineering and during my engineer role I worked on troubleshooting software of inhouse and outsource TVs. I had the opportunity to work with our partner companies Google and MTK within the two android projects we developed during this process. During my specialization period, I worked on Smart Board and Hotel TV projects. Currently, I am working on developing a hotel TV application for Android TVs and creating a web-based management application for hotel administrators.",
+        "paragraph3": "Drawing and making music are among my hobbies. I am skilled in creating realistic portraits using charcoal and ink. Additionally, I can play various types of guitars and have proficiency in playing the keyboard.",
+        "paragraph4": "Throughout my career, my interest in visual design has grown, and I aim to specialize in frontend design by combining it with my empathetic abilities. Improving and enhancing people's lives is my top priority. In the future, I aspire to continue my career in Europe. During my university years, I had the opportunity to spend five months in Europe through the Erasmus+ student exchange program, and I believe that experience nurtured my soul and creativity."
+    },
+    "skills": {
+        "skills": "Skills",
+        "title": "My Skills Explained",
+        "paragraph": "In high school, I developed an interest in charcoal drawings, and during my university education, I took courses in functional, object-oriented, and microcontroller programming. In my professional career, I focused on web applications and embedded Linux projects, honing my skills in these areas. I have learned technologies such as C, C++, JS, TS, React-JS, HTML, CSS, Bootstrap, SASS, Tailwind, and MUI."
+    },
+    "projects": {
+        "projects" : "Projects",
+        "header1": "ALL PROJECTS",
+        "header2": "THAT",
+        "header3": "I AM INVOLVED IN"
+    },
+    "contact": {
+        "contacts": "Contacts",
+        "name": "NAME",
+        "email": "EMAIL",
+        "message": "MESSAGE",
+        "sendMessage": "SEND ME A MESSAGE"
+    },
+    "footer": {},
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    }
+}

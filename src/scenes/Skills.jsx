@@ -2,9 +2,11 @@ import LineGradient from "../components/LineGradient";
 import NeonBar from "../components/NeonBar";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const { t } = useTranslation("translation");
 
   return (
     <section
@@ -12,7 +14,9 @@ const Skills = () => {
       className="flex flex-col justify-center items-start h-full mt-10 py-10"
     >
       <div className="flex flex-row">
-        <p className="text-8xl font-neonderthaw text-neon-blue">Skills</p>
+        <p className="text-8xl font-neonderthaw text-neon-blue">
+          {t("skills.skills")}
+        </p>
       </div>
 
       <div className="flex flex-col md:flex-row w-full">
@@ -34,25 +38,19 @@ const Skills = () => {
         <div className=" w-full md:w-8/12 m-5 p-10 pl-0 md:pl-7 pr-20">
           <a
             href="/"
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
           >
             <img
-              class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+              className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
               src="../assets/Photo2.jpeg"
               alt=""
             />
-            <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                My Skills Explained
+            <div className="flex flex-col justify-between p-4 leading-normal">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {t("skills.title")}
               </h5>
-              <p class="mb-3 text-md font-playfair text-gray-700 dark:text-gray-400">
-                In high school, I developed an interest in charcoal drawings,
-                and during my university education, I took courses in
-                functional, object-oriented, and microcontroller programming. In
-                my professional career, I focused on web applications and
-                embedded Linux projects, honing my skills in these areas. I have
-                learned technologies such as C, C++, JS, TS, React-JS, HTML,
-                CSS, Bootstrap, SASS, Tailwind, and MUI.
+              <p className="mb-3 text-md font-playfair text-gray-700 dark:text-gray-400">
+                {t("skills.paragraph")}
               </p>
             </div>
           </a>
