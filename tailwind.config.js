@@ -34,6 +34,8 @@ module.exports = {
         video: "url('./assets/Video.mp4')",
         menuicon: "url('./assets/menu-icon.svg')",
         closeicon: "url('./assets/close-icon.svg')",
+        ship: "url('./assets/ship.png')",
+        mail: "url('./assets/Mail.png')",
       },
     },
     screens: {

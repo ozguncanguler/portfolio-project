@@ -1,10 +1,10 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const DotGroup = ({ selectedPage, setSelectedPage }) => {
-  const moonStyle = `relative bg-white hover:shadow-white shadow-lg  before:absolute before:w-4 before:h-4 before:rounded-full 
+  const moonStyle = `transition duration-1000 relative bg-white hover:shadow-white shadow-lg  before:absolute before:w-4 before:h-4 before:rounded-full 
   before:border-2 before:border-navy-blue before:bg-navy-blue before:left-[10%] before:top-[-5%]`;
 
-  const sunStyle = `relative bg-yellow hover:shadow-yellow shadow-lg before:absolute before:w-1 before:h-5 before:bg-navy-blue 
+  const sunStyle = `transition duration-1000 relative bg-pale-yellow hover:shadow-yellow shadow-lg before:absolute before:w-1 before:h-5 before:bg-navy-blue 
   before:left-[40%] after:absolute after:h-1 after:w-5 after:bg-navy-blue after:top-[40%]`;
 
   return (

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
-
+import { color, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
 import ReactFlagsSelect from "react-flags-select";
@@ -31,8 +31,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage ? "" : "bg-blue";
   const { t } = useTranslation("translation");
-  const [languageSelected, setLanguageSelected] = useState();
+  const [languageSelected, setLanguageSelected] = useState("GB");
   const lang = i18n.language.toUpperCase();
+
+  const selectStyles = {
+    color: "red",
+  };
 
   // Language initializator for react flag select
   useEffect(() => {
@@ -64,12 +68,22 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
-      <div className="flex items-center justify-between mx-auto w-5/6">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1 }}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        className="flex items-center justify-between mx-auto w-5/6"
+      >
         <div />
         {isAboveSmallScreens ? (
           <div
             style={{ transform: "translateY(0px)" }}
-            className="flex justify-between gap-16 font-opensans text-sm font-semibold text-pale-yellow"
+            className="flex justify-between gap-16 font-opensans text-sm font-semibold text-pale-yellow "
           >
             <Link
               page="Home"
@@ -103,6 +117,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               showSelectedLabel={false}
               selected={languageSelected.toString()}
               onSelect={handleLanguageChange}
+              className="text-black w-20"
             />
           </div>
         ) : (
@@ -113,6 +128,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               showSelectedLabel={false}
               selected={languageSelected.toString()}
               onSelect={handleLanguageChange}
+              className="text-black"
             />
             <button
               className="rounded-lg  bg-deep-blue ml-4 p-2 hover:bg-blue transition duration-500"
@@ -162,7 +178,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
     </nav>
   );
 };
